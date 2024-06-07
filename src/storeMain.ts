@@ -1,8 +1,10 @@
+import { StoreCmpntAutocomplete } from "./components/autocomplete";
 import { StoreTextWithButtons } from "./components/textWithButtons";
 
 export default class StoreMain {
     readonly storeTextWithButtons1: StoreTextWithButtons;
     readonly storeTextWithButtons2: StoreTextWithButtons;
+    readonly storeCmpntAutocomplete1: StoreCmpntAutocomplete;
 
     constructor() {
         this.storeTextWithButtons1 = new StoreTextWithButtons({
@@ -54,6 +56,9 @@ export default class StoreMain {
                 }
             ],
         });
+
+
+        this.storeCmpntAutocomplete1 = new StoreCmpntAutocomplete();
     }
 
 }

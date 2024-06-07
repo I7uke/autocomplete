@@ -1,0 +1,46 @@
+.autocomplete_input {
+    width: 100%;
+    box-sizing: border-box;
+    font-family: Tahoma, sans-serif;
+    font-size: 16px;
+    /* border-radius: 6px; */
+    border-radius: 6px 6px 0 0;
+    padding: 10px;
+    color: black;
+    /* border: 1px solid #00c6ff; */
+    background-color: white;
+    transition: border-color 0.5s, box-shadow 0.5s;
+    outline: none;
+
+    border-top: 1px solid #00c6ff;;
+    border-right: 1px solid #00c6ff;
+    border-bottom: unset;
+    border-left: 1px solid #00c6ff;
+}
+
+.autocomplete_input:focus {
+    border-color: #0ba5d1;
+    box-shadow: 0 0 6px 0 #ababab;
+}
+
+.autocomplete_munuWrapper {
+    position: relative;
+}
+
+.autocomplete_menuContainer {
+    z-index: 100;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-height: 200px;
+    overflow-y: auto;
+    background-color: white;
+    padding: 10px;
+    box-sizing: border-box;
+    border-top: unset;
+    border-right: 1px solid #00c6ff;
+    border-bottom: 1px solid #00c6ff;
+    border-left: 1px solid #00c6ff;
+    border-radius: 0 0 6px 6px;
+}
