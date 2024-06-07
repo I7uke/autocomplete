@@ -1,0 +1,73 @@
+.textWithButtons_inputTextarea {
+    width: 100%;
+    max-width: 100%;
+    resize: vertical;
+    height: 200px;
+    min-height: 100px;
+    box-sizing: border-box;
+    font-family: Tahoma, sans-serif;
+    font-size: 16px;
+    border-radius: 10px;
+    padding: 10px;
+    color: black;
+    border: 1px solid #00c6ff;
+    background-color: white;
+    box-sizing: border-box;
+    transition: border-color 0.5s, box-shadow 0.5s;
+    outline: none;
+}
+
+.textWithButtons_inputTextarea:focus {
+    border-color: #0ba5d1;
+    box-shadow: 0 0 6px 0 #ababab;
+}
+
+.textWithButtons_buttonsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.textWithButtons_columns {
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.textWithButtons_leftButtonsContainer {
+    max-width: 300px;
+}
+
+.textWithButtons_rightButtonsContainer {
+    max-width: 300px;
+}
+
+.textWithButtons_inputContainer {
+    flex: 1;
+    min-width: 300px;
+}
+
+@media screen and (max-width: 980px) {
+    .textWithButtons_rightButtonsContainer {
+        width: 100%;
+        max-width: unset;
+    }
+
+    .textWithButtons_rightButtonsContainer .textWithButtons_buttonsContainer {
+        justify-content: flex-start;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .textWithButtons_leftButtonsContainer {
+        width: 100%;
+        max-width: unset;
+    }
+
+    .textWithButtons_leftButtonsContainer .textWithButtons_buttonsContainer {
+        justify-content: flex-start;
+    }
+}
