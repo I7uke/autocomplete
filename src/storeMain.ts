@@ -12,6 +12,7 @@ export default class StoreMain {
             rightButtons: [
                 {
                     text: 'Очистить',
+                    width: 130,
                     onClick: () => {
                         this.storeTextWithButtons1.setValue('');
                     }
@@ -19,6 +20,7 @@ export default class StoreMain {
                 {
                     text: 'Hello',
                     type: 'secondary',
+                    width: 130,
                     onClick: () => {
                         this.storeTextWithButtons1.setValue('Hello world!');
                     }
@@ -31,7 +33,9 @@ export default class StoreMain {
                 {
                     text: 'Текст',
                     type: 'secondary',
+                    width: 110,
                     onClick: () => {
+                        //Показываем текущее значение
                         alert(this.storeTextWithButtons2.value)
                     }
                 }
@@ -39,19 +43,23 @@ export default class StoreMain {
             leftButtons: [
                 {
                     text: 'Число',
+                    width: 110,
                     onClick: () => {
+                        // Получаем текущее значение
                         const value: string = this.storeTextWithButtons2.value;
 
                         if (!value) {
                             return;
                         }
 
+                        // Приводим строку к числу
                         const valueNumber: number = Number(this.storeTextWithButtons2.value);
 
                         if (isNaN(valueNumber)) {
                             return;
                         }
 
+                        // Показываем число
                         alert(valueNumber);
                     }
                 }

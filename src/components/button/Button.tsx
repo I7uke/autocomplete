@@ -5,6 +5,7 @@ interface Props {
     readonly onClick?: () => void;
     readonly type?: 'primary' | 'secondary';
     readonly disabled?: boolean;
+    readonly width?: string | number;
 }
 
 export default function Button(props: Props) {
@@ -16,6 +17,7 @@ export default function Button(props: Props) {
 
     return (
         <button
+            style={{ width: props.width }}
             className={`button_button ${cssClassType}`}
             disabled={props.disabled}
             onClick={props.disabled ? undefined : props.onClick}

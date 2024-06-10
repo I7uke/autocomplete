@@ -1,1 +1,1 @@
-export {default as LoaderDots} from "./loaderDots";
+export {default as LoaderDots} from "./LoaderDots";
