@@ -1,0 +1,43 @@
+@keyframes loaderDots_animationPulse {
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
+  to {
+    opacity: .25;
+    transform: scale(.75);
+  }
+}
+
+.loaderDots_spinnerBox {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loaderDots_pulseContainer {
+  width: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.loaderDots_pulseBubble {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: #00c6ff;
+}
+
+.loaderDots_pulseBubble1 {
+  animation: loaderDots_animationPulse .4s ease 0s infinite alternate;
+}
+
+.loaderDots_pulseBubble2 {
+  animation: loaderDots_animationPulse .4s ease .2s infinite alternate;
+}
+
+.loaderDots_pulseBubble3 {
+  animation: loaderDots_animationPulse .4s ease .4s infinite alternate;
+}
+

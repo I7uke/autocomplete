@@ -7,7 +7,7 @@ import StoreMain from "./storeMain";
 
 function App(props: SmartComponentProps<StoreMain>) {
   return (
-    <div>
+    <div className={'app_container'}>
       <ContentContainer>
         <TextWithButtons store={props.store.storeTextWithButtons1} />
       </ContentContainer>
@@ -18,6 +18,10 @@ function App(props: SmartComponentProps<StoreMain>) {
 
       <ContentContainer>
         <Autocomplete store={props.store.storeCmpntAutocomplete1}/>
+      </ContentContainer>
+
+      <ContentContainer>
+        <Autocomplete store={props.store.storeCmpntAutocomplete2}/>
       </ContentContainer>
     </div>
   );

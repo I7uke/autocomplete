@@ -37,19 +37,19 @@
 }
 
 .textWithButtons_leftButtonsContainer {
-    max-width: 300px;
+    max-width: 200px;
 }
 
 .textWithButtons_rightButtonsContainer {
-    max-width: 300px;
+    max-width: 200px;
 }
 
 .textWithButtons_inputContainer {
     flex: 1;
-    min-width: 300px;
+    min-width: 200px;
 }
 
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 660px) {
     .textWithButtons_rightButtonsContainer {
         width: 100%;
         max-width: unset;
@@ -60,7 +60,7 @@
     }
 }
 
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 500px) {
     .textWithButtons_leftButtonsContainer {
         width: 100%;
         max-width: unset;

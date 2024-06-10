@@ -5,7 +5,8 @@ export default class StoreMain {
     readonly storeTextWithButtons1: StoreTextWithButtons;
     readonly storeTextWithButtons2: StoreTextWithButtons;
     readonly storeCmpntAutocomplete1: StoreCmpntAutocomplete;
-
+    readonly storeCmpntAutocomplete2: StoreCmpntAutocomplete;
+    
     constructor() {
         this.storeTextWithButtons1 = new StoreTextWithButtons({
             rightButtons: [
@@ -57,8 +58,12 @@ export default class StoreMain {
             ],
         });
 
+        this.storeCmpntAutocomplete1 = new StoreCmpntAutocomplete({
+            maxItemsCount: 3
+        });
 
-        this.storeCmpntAutocomplete1 = new StoreCmpntAutocomplete();
+        this.storeCmpntAutocomplete2 = new StoreCmpntAutocomplete({
+            maxItemsCount: 10
+        });
     }
-
 }
