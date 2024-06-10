@@ -12,7 +12,7 @@ interface Init {
     readonly value?: string;
 }
 
-export default class StoreTextWithButtons {
+export default class StoreCmpntTextWithButtons {
     //#region value
     /**
      * Текущее значение input

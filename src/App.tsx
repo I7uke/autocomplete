@@ -9,11 +9,11 @@ function App(props: SmartComponentProps<StoreMain>) {
   return (
     <div className={'app_container'}>
       <ContentContainer>
-        <TextWithButtons store={props.store.storeTextWithButtons1} />
+        <TextWithButtons store={props.store.storeCmpntTextWithButtons1} />
       </ContentContainer>
 
       <ContentContainer>
-        <TextWithButtons store={props.store.storeTextWithButtons2} />
+        <TextWithButtons store={props.store.storeCmpntTextWithButtons2} />
       </ContentContainer>
 
       <ContentContainer>

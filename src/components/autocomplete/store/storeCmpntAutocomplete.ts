@@ -122,6 +122,11 @@ export default class StoreCmpntAutocomplete {
         this._itemsStatus_observable = {
             status: 'empty'
         };
+
+        if (this._timerId) {
+            clearTimeout(this._timerId);
+            this._timerId = undefined;
+        }
     }
 
     /**

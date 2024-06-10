@@ -1,20 +1,20 @@
 import { StoreCmpntAutocomplete } from "./components/autocomplete";
-import { StoreTextWithButtons } from "./components/textWithButtons";
+import { StoreCmpntTextWithButtons } from "./components/textWithButtons";
 
 export default class StoreMain {
-    readonly storeTextWithButtons1: StoreTextWithButtons;
-    readonly storeTextWithButtons2: StoreTextWithButtons;
+    readonly storeCmpntTextWithButtons1: StoreCmpntTextWithButtons;
+    readonly storeCmpntTextWithButtons2: StoreCmpntTextWithButtons;
     readonly storeCmpntAutocomplete1: StoreCmpntAutocomplete;
     readonly storeCmpntAutocomplete2: StoreCmpntAutocomplete;
     
     constructor() {
-        this.storeTextWithButtons1 = new StoreTextWithButtons({
+        this.storeCmpntTextWithButtons1 = new StoreCmpntTextWithButtons({
             rightButtons: [
                 {
                     text: 'Очистить',
                     width: 130,
                     onClick: () => {
-                        this.storeTextWithButtons1.setValue('');
+                        this.storeCmpntTextWithButtons1.setValue('');
                     }
                 },
                 {
@@ -22,13 +22,13 @@ export default class StoreMain {
                     type: 'secondary',
                     width: 130,
                     onClick: () => {
-                        this.storeTextWithButtons1.setValue('Hello world!');
+                        this.storeCmpntTextWithButtons1.setValue('Hello world!');
                     }
                 }
             ],
         });
 
-        this.storeTextWithButtons2 = new StoreTextWithButtons({
+        this.storeCmpntTextWithButtons2 = new StoreCmpntTextWithButtons({
             rightButtons: [
                 {
                     text: 'Текст',
@@ -36,7 +36,7 @@ export default class StoreMain {
                     width: 110,
                     onClick: () => {
                         //Показываем текущее значение
-                        alert(this.storeTextWithButtons2.value)
+                        alert(this.storeCmpntTextWithButtons2.value)
                     }
                 }
             ],
@@ -46,14 +46,14 @@ export default class StoreMain {
                     width: 110,
                     onClick: () => {
                         // Получаем текущее значение
-                        const value: string = this.storeTextWithButtons2.value;
+                        const value: string = this.storeCmpntTextWithButtons2.value;
 
                         if (!value) {
                             return;
                         }
 
                         // Приводим строку к числу
-                        const valueNumber: number = Number(this.storeTextWithButtons2.value);
+                        const valueNumber: number = Number(this.storeCmpntTextWithButtons2.value);
 
                         if (isNaN(valueNumber)) {
                             return;

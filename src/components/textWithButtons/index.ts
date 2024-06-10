@@ -1,2 +1,2 @@
 export {default as TextWithButtons} from './component/TextWithButtons';
-export {default as StoreTextWithButtons} from './store/storeTextWithButtons';
+export {default as StoreCmpntTextWithButtons} from './store/storeCmpntTextWithButtons';
